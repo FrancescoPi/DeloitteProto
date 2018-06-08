@@ -1,0 +1,6 @@
+framework module Pods_DeloitteProto {
+  umbrella header "Pods-DeloitteProto-umbrella.h"
+
+  export *
+  module * { export * }
+}

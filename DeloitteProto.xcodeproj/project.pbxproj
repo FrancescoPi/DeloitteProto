@@ -14,9 +14,11 @@
 		131DF3B020CABE96004E4F64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 131DF3AF20CABE96004E4F64 /* Assets.xcassets */; };
 		131DF3B320CABE96004E4F64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 131DF3B120CABE96004E4F64 /* LaunchScreen.storyboard */; };
 		131DF3BC20CABEE4004E4F64 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 131DF3BB20CABEE4004E4F64 /* MapKit.framework */; };
+		92865DD9428DDD676C85FBE5 /* Pods_DeloitteProto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B687AF596C3B667018BFCC72 /* Pods_DeloitteProto.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C2B85CCC6688DDFF7967E6F /* Pods-DeloitteProto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeloitteProto.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeloitteProto/Pods-DeloitteProto.release.xcconfig"; sourceTree = "<group>"; };
 		131DF3A220CABE94004E4F64 /* DeloitteProto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeloitteProto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		131DF3A520CABE94004E4F64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		131DF3A720CABE94004E4F64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		131DF3B220CABE96004E4F64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		131DF3B420CABE96004E4F64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		131DF3BB20CABEE4004E4F64 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		1FF2A9569E964074EA421F54 /* Pods-DeloitteProto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeloitteProto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeloitteProto/Pods-DeloitteProto.debug.xcconfig"; sourceTree = "<group>"; };
+		B687AF596C3B667018BFCC72 /* Pods_DeloitteProto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeloitteProto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +38,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				131DF3BC20CABEE4004E4F64 /* MapKit.framework in Frameworks */,
+				92865DD9428DDD676C85FBE5 /* Pods_DeloitteProto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +51,7 @@
 				131DF3A420CABE94004E4F64 /* DeloitteProto */,
 				131DF3A320CABE94004E4F64 /* Products */,
 				131DF3BA20CABEE4004E4F64 /* Frameworks */,
+				9C7F3D41C00E27A1304F85F5 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,8 +81,18 @@
 			isa = PBXGroup;
 			children = (
 				131DF3BB20CABEE4004E4F64 /* MapKit.framework */,
+				B687AF596C3B667018BFCC72 /* Pods_DeloitteProto.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C7F3D41C00E27A1304F85F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1FF2A9569E964074EA421F54 /* Pods-DeloitteProto.debug.xcconfig */,
+				0C2B85CCC6688DDFF7967E6F /* Pods-DeloitteProto.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 131DF3B720CABE96004E4F64 /* Build configuration list for PBXNativeTarget "DeloitteProto" */;
 			buildPhases = (
+				B6D24215646C875822DE921B /* [CP] Check Pods Manifest.lock */,
 				131DF39E20CABE94004E4F64 /* Sources */,
 				131DF39F20CABE94004E4F64 /* Frameworks */,
 				131DF3A020CABE94004E4F64 /* Resources */,
+				2F6709399D46E607D1908601 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +167,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F6709399D46E607D1908601 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DeloitteProto/Pods-DeloitteProto-frameworks.sh",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework.dSYM",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/Mapbox.framework.dSYM",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DeloitteProto/Pods-DeloitteProto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6D24215646C875822DE921B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DeloitteProto-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		131DF39E20CABE94004E4F64 /* Sources */ = {
@@ -299,6 +358,7 @@
 		};
 		131DF3B820CABE96004E4F64 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FF2A9569E964074EA421F54 /* Pods-DeloitteProto.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -317,6 +377,7 @@
 		};
 		131DF3B920CABE96004E4F64 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C2B85CCC6688DDFF7967E6F /* Pods-DeloitteProto.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
