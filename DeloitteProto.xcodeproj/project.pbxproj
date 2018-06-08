@@ -13,6 +13,7 @@
 		131DF3AE20CABE94004E4F64 /* DeloitteProto.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 131DF3AC20CABE94004E4F64 /* DeloitteProto.xcdatamodeld */; };
 		131DF3B020CABE96004E4F64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 131DF3AF20CABE96004E4F64 /* Assets.xcassets */; };
 		131DF3B320CABE96004E4F64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 131DF3B120CABE96004E4F64 /* LaunchScreen.storyboard */; };
+		131DF3BC20CABEE4004E4F64 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 131DF3BB20CABEE4004E4F64 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		131DF3AF20CABE96004E4F64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		131DF3B220CABE96004E4F64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		131DF3B420CABE96004E4F64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		131DF3BB20CABEE4004E4F64 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				131DF3BC20CABEE4004E4F64 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +45,7 @@
 			children = (
 				131DF3A420CABE94004E4F64 /* DeloitteProto */,
 				131DF3A320CABE94004E4F64 /* Products */,
+				131DF3BA20CABEE4004E4F64 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +69,14 @@
 				131DF3AC20CABE94004E4F64 /* DeloitteProto.xcdatamodeld */,
 			);
 			path = DeloitteProto;
+			sourceTree = "<group>";
+		};
+		131DF3BA20CABEE4004E4F64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				131DF3BB20CABEE4004E4F64 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +111,11 @@
 				TargetAttributes = {
 					131DF3A120CABE94004E4F64 = {
 						CreatedOnToolsVersion = 9.3.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
